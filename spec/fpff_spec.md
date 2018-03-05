@@ -51,7 +51,8 @@ if the condition is not met.
 
 If FPFF data is read from a file, then that file **should** have a `.fpff` suffix.
 
-All FPFF data is little-endian.
+All FPFF data is little-endian **except** for the content of section values, which may be whatever
+their format requires.
 
 Unless otherwise specified, all integer fields are **unsigned**.
 
