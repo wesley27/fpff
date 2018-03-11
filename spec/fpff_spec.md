@@ -27,7 +27,7 @@ FPFF was developed by [UMD-CSEC](http://csec.umd.edu) for
 The specification and a reference implementation are available on
 [GitHub](https://github.com/UMD-CSEC/fpff) under the MIT license.
 
-Everything below this is fictional.
+The overview below this is fictional.
 
 # Overview
 
@@ -74,8 +74,6 @@ The FPFF header begins at offset 0.
 Its layout is as follows:
 
 \begin{bytefield}[bitwidth=1.1em]{32}
-    \bitheader{0-31} \\
-
     \wordbox{1}{Magic (\texttt{0xBEFEDADE})} \\
     \wordbox{1}{Version (\texttt{version})} \\
     \wordbox{1}{Timestamp (\texttt{timestamp})} \\
@@ -111,7 +109,7 @@ The stream's timestamp **must** be a valid UNIX timestamp.[^1]
 
 ### Author
 
-The author field is a dword (8 bytes).
+The author field is 8 bytes.
 
 The stream's author **must** be ASCII-encoded[^2]. If the author is shorter than 8 bytes,
 then the field **must** be padded with null (`0x0`) bytes.
