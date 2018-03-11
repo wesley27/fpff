@@ -223,8 +223,8 @@ the range `[0, nsects - 1]`.
 
 Sections of type `SECTION_PNG` **must** contain `slen` bytes of PNG-encoded data[^4].
 
-As a space-saving measure, a proper RFCC emitter **must** remove the PNG's file signature[^5]. Thus,
-a proper RFCC parser **must** re-add the signature to produce the actual PNG.
+As a space-saving measure, a proper FPFF emitter **must** remove the PNG's file signature[^5]. Thus,
+a proper FPFF parser **must** re-add the signature to produce the actual PNG.
 
 [^4]: <https://en.wikipedia.org/wiki/Portable_Network_Graphics>
 [^5]: <http://www.libpng.org/pub/png/spec/1.2/PNG-Rationale.html#R.PNG-file-signature>
